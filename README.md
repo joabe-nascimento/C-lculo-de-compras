@@ -1,19 +1,23 @@
-Explicação:
-Array carrinhoDeCompras:
+# Carrinho de Compras - Cálculo do Custo Total
 
-Cada item é representado por um objeto que tem o nome do produto, o preço unitário e a quantidade que o cliente comprou.
-Exemplo: { nome: "Maçã", preco: 2.50, quantidade: 3 } significa que o cliente pegou 3 maçãs a R$2,50 cada.
-Função calcularCustoTotal(carrinho):
+## Descrição
 
-Ela itera sobre o array de objetos (carrinho de compras).
-Para cada item, multiplica o preço pela quantidade.
-Usa o método forEach para somar o valor de cada item ao total.
-Chamada da função:
+Este projeto é um exemplo simples de um sistema de carrinho de compras que calcula o valor total de uma compra. Cada item no carrinho é representado por um objeto que contém informações sobre o produto, incluindo o nome, o preço unitário e a quantidade comprada. A aplicação foi desenvolvida utilizando JavaScript, demonstrando conceitos fundamentais como arrays, objetos e funções.
 
-A função calcularCustoTotal(carrinhoDeCompras) retorna a soma total de todos os itens no carrinho.
-Saída:
+## Objetivo
 
-O console.log exibe o valor total da compra com duas casas decimais. Exemplo de saída: "O valor total da compra é: R$ 41.00".
-Como funciona:
-O cliente pegou 3 maçãs a R$2,50 cada (3 * 2.50 = R$7,50), 2 pães a R$4,00 cada (2 * 4.00 = R$8,00), 1 leite a R$5,00, e 2 caixas de ovos a R$10,00 cada (2 * 10.00 = R$20,00).
-O total é a soma de todos esses valores: 7.50 + 8.00 + 5.00 + 20.00 = R$41,00.
+O objetivo deste projeto é fornecer uma maneira fácil e eficiente de calcular o custo total de uma compra em um mercado, considerando diversos itens com preços e quantidades diferentes.
+
+## Estrutura do Projeto
+
+### Array `carrinhoDeCompras`
+
+O carrinho de compras é representado por um array de objetos, onde cada objeto representa um item adquirido. Cada item contém as seguintes propriedades:
+
+- `nome`: O nome do produto.
+- `preco`: O preço unitário do produto.
+- `quantidade`: A quantidade comprada pelo cliente.
+
+**Exemplo de item no carrinho**:
+```js
+{ nome: "Maçã", preco: 2.50, quantidade: 3 }
